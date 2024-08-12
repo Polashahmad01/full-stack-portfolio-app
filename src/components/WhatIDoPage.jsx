@@ -50,7 +50,7 @@ export default function WhatIDoPage() {
               <div className="text-[#2cf8ff] opacity-70">03</div>
             </div>
             <h4 className={`${spacegrotesk.className} leading-tight mb-4 text-[26px] font-medium uppercase`}>
-              <span>Effective</span>
+              <span>Quick</span>
               <br />
               <span>Delivery</span>
             </h4>

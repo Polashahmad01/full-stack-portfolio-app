@@ -13,7 +13,7 @@ export default function ContactForm() {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("https://formspree.io/f/mwpebrpn", data);
+      const response = await axios.post("https://formspree.io/f/meojkpwr", data);
       setFormStatus(response?.data);
       reset();
     } catch (error) {

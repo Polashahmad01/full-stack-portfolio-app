@@ -26,12 +26,12 @@ export default function MyExperiencePage() {
               </Link>
             </div>
             <div className="flex items-center justify-between">
-              <h4 className="leading-tight mb-4 text-2xl font-medium opacity-90">FrontEnd Engineer</h4>
+              <h4 className="leading-tight mb-4 text-2xl font-medium opacity-90">FullStack Engineer</h4>
               <p className="text-sm opacity-70">Mar 2023 - Apr 2024</p>
             </div>
             <p className="leading-normal text-[#96a7a1]">
-              At Eirene Cremations, I focused on the front end, delivering features such as a deceased status checker and creating forms for listing
-              deceased information. I also built internal tools to manage the entire system and integrated backend APIs & collaborated
+              At Eirene Cremations, I focused on delivering features such as a deceased status checker and creating forms for listing
+              deceased information. I also built internal tools to manage the entire system, create and integrated backend APIs & collaborated
               with the team to ensure a seamless user experience.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function MyExperiencePage() {
               </Link>
             </div>
             <div className="flex items-center justify-between">
-              <h4 className="leading-tight mb-4 text-2xl font-medium opacity-90">FrontEnd Developer</h4>
+              <h4 className="leading-tight mb-4 text-2xl font-medium opacity-90">FullStack Developer</h4>
               <p className="text-sm opacity-70">Jun 2022 - Feb 2023</p>
             </div>
             <p className="leading-normal text-[#96a7a1]">
