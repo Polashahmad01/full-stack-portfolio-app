@@ -57,10 +57,8 @@ export default function IntroPage() {
               I&apos;m <span className="text-[#20bf55]">Polash Ahmad</span>
             </h1>
             <p className="text-center leading-6 lg:text-left mb-8 opacity-75">
-              Transforming ideas into visually stunning and high-performing web interfaces is my specialty.
-              With expertise in front-end development, I create solutions that blend elegance with efficiency.
-              Eye for design ensures pixel-perfect accuracy, while my commitment to innovation drives me to explore and implement the latest techniques.
-              Let&apos;s collaborate and bring your vision to life with exceptional results!
+              A passionate full-stack developer with extensive experience transforming ideas into projects from ideation to deployment. 
+              Thriving on creative problem-solving, a blend of technical expertise and artistic vision is used to craft elegant solutions.
             </p>
             <div className="text-lg font-light sm:font-semibold flex items-center justify-center lg:justify-start gap-4">
               <button className="flex items-center justify-center gap-2 bg-[#20bf55] w-52 text-black py-[11px] rounded-xl border border-solid border-[rgba(255,255,255,.1)] transition-all hover:border-[#20bf55] hover:rounded-xl hover:opacity-90">
