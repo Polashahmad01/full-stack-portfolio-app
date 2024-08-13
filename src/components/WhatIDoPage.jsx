@@ -24,7 +24,9 @@ export default function WhatIDoPage() {
             </h4>
             <div className="">
               <p className="leading-normal text-[#96a7a1]">
-                Bring your vision to life with a stunning, responsive website. We prioritize accessibility and optimize performance for a seamless experience. Together, we&#39;ll create engaging interactions that keep your audience coming back.
+                I focus on user-centered design by blending creativity with functionality. Through research and analysis, 
+                I create intuitive interfaces that enhance user satisfaction, making applications visually appealing and easy to navigate. 
+                A great user experience is essential for success.
               </p>
             </div>
           </div>
@@ -40,7 +42,9 @@ export default function WhatIDoPage() {
             </h4>
             <div className="">
               <p className="leading-normal text-[#96a7a1]">
-                Leverage modern JavaScript skills to create dynamic web applications that engage users. Focus on polished designs with CSS and preprocessors, using version control for smooth collaboration. Build tools and API integration streamline workflows and enhance functionality.
+                Expertise in modern technologies enables the delivery of high-quality, scalable web applications. 
+                Proficient in both front-end and back-end development, ensuring seamless integration of design and 
+                functionality in every project.
               </p>
             </div>
           </div>
@@ -56,7 +60,9 @@ export default function WhatIDoPage() {
             </h4>
             <div className="">
               <p className="leading-normal text-[#96a7a1]">
-                Foster effective communication to enhance team collaboration and improve workflows. Use agile practices to adapt quickly and deliver results efficiently. Conduct thorough code reviews to ensure high-quality standards. Prioritize clear documentation for better understanding and maintenance.
+                Recognizing the importance of timely delivery, a fast development process enables quick iterations and 
+                on-time releases without sacrificing quality. Committed to meeting deadlines while upholding the highest 
+                standards of professionalism and excellence.
               </p>
             </div>
           </div>
