@@ -61,10 +61,14 @@ export default function IntroPage() {
               Thriving on creative problem-solving, a blend of technical expertise and artistic vision is used to craft elegant solutions.
             </p>
             <div className="text-lg font-light sm:font-semibold flex items-center justify-center lg:justify-start gap-4">
-              <button className="flex items-center justify-center gap-2 bg-[#20bf55] w-52 text-black py-[11px] rounded-xl border border-solid border-[rgba(255,255,255,.1)] transition-all hover:border-[#20bf55] hover:rounded-xl hover:opacity-90">
+              <a 
+                className="flex items-center justify-center gap-2 bg-[#20bf55] w-52 text-black py-[11px] rounded-xl border border-solid border-[rgba(255,255,255,.1)] transition-all hover:border-[#20bf55] hover:rounded-xl hover:opacity-90"
+                href="/polash-ahmad-resume.pdf"
+                download="Polash_Ahmad_Resume"
+              >
                 <FaCloudDownloadAlt size="20px" className="text-black" />
                 <span className="">Resume</span>
-              </button>
+              </a>
               <Link href="mailto:dev.polashahmad@gmail.com" className="flex items-center justify-center gap-2 bg-[#171717] py-[11px] w-52 rounded-xl border border-solid border-[rgba(255,255,255,.1)] transition-all hover:border-[#20bf55] hover:rounded-xl hover:text-[#20bf55]">
                 <MdEmail size="18px" className="" />
                 <span className="">Contact</span>
