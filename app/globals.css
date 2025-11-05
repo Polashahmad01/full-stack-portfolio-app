@@ -3,8 +3,19 @@
 @theme inline {
   --font-poppins: var(--font-family-poppins), sans-serif;
   --font-righteous: var(--font-family-righteous), sans-serif;
+  --font-space-grotesk: var(--font-family-space-grotesk), sans-serif;
 }
 
 body {
   font-family: var(--font-family-poppins);
+}
+
+.chat__on__whatsapp {
+  background-image: linear-gradient(98deg, #02b09b61, #5a89fd2e);
+  transition: all 0.3s ease-in-out;
+}
+
+.chat__on__whatsapp:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(5, 76, 155, 0.6);
 }
