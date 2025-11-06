@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="flex flex-col gap-12 md:flex-row md:items-center md:gap-16">
         <article className="flex-1">
           <h3 className="font-righteous text-xl leading-normal tracking-normal mb-4 md:text-2xl md:mb-6">Let's Get In Touch!</h3>
-          <p className="leading-normal tracking-normal mb-4">
+          <p className="text-sm leading-normal tracking-normal mb-4">
             If you're interested in learning more about me, collaborating on a project, or simply curious
             and want to say hello, please don't hesitate to send me a message.
             I enjoy receiving messages from people on the internet!

@@ -1,3 +1,4 @@
+import WhoAmI from "@/components/WhoAmI";
 import Skills from "@/components/Skills";
 import ToolsIUse from "@/components/ToolsIUse";
 import MyResentProject from "@/components/MyRecentProject";
@@ -8,6 +9,7 @@ import AppFooter from "@/components/AppFooter";
 export default function Home() {
   return (
     <main className="bg-black text-white">
+      <WhoAmI />
       <Skills />
       <ToolsIUse />
       <MyResentProject />
