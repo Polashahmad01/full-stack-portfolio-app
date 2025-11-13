@@ -12,12 +12,12 @@ export default function Home() {
     <main className="bg-black text-white">
       <Navigation />
       <WhoAmI />
-      {/* <Skills />
+      <Skills />
       <ToolsIUse />
       <MyResentProject />
       <MyExperience />
       <Contact />
-      <AppFooter /> */}
+      <AppFooter />
     </main>
   );
 }
