@@ -5,6 +5,10 @@ import Image from "next/image";
 
 export default function ProfileCard() {
   const [binaryMatrix, setBinaryMatrix] = useState<string[][]>([]);
+  const [leftSideBinary, setLeftSideBinary] = useState<string[]>([]);
+  const [rightSideBinary, setRightSideBinary] = useState<string[]>([]);
+  const [floatingParticles, setFloatingParticles] = useState<Array<{ value: string, left: number, top: number }>>([]);
+  const [footerBinary, setFooterBinary] = useState<string[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number | undefined>(undefined);
 
@@ -16,6 +20,24 @@ export default function ProfileCard() {
       .fill(null)
       .map(() => Array(cols).fill(null).map(() => (Math.random() > 0.5 ? "1" : "0")));
     setBinaryMatrix(initialMatrix);
+
+    // Initialize side binary overlays
+    const leftBinary = Array(8).fill(null).map(() => Math.random() > 0.5 ? "1" : "0");
+    const rightBinary = Array(8).fill(null).map(() => Math.random() > 0.5 ? "1" : "0");
+    setLeftSideBinary(leftBinary);
+    setRightSideBinary(rightBinary);
+
+    // Initialize floating particles
+    const particles = Array(12).fill(null).map(() => ({
+      value: Math.random() > 0.5 ? "1" : "0",
+      left: Math.random() * 100,
+      top: Math.random() * 100
+    }));
+    setFloatingParticles(particles);
+
+    // Initialize footer binary
+    const footer = Array(20).fill(null).map(() => Math.random() > 0.5 ? "1" : "0");
+    setFooterBinary(footer);
 
     // Animate binary matrix
     const animate = () => {
@@ -104,37 +126,33 @@ export default function ProfileCard() {
 
         {/* Binary overlay on sides */}
         <div className="absolute left-2 top-0 bottom-0 flex flex-col justify-center gap-1 opacity-40 z-10">
-          {Array(8)
-            .fill(null)
-            .map((_, i) => (
-              <span
-                key={i}
-                className="font-poppins text-xs binary-fall text-white"
-                style={{
-                  animationDelay: `${i * 0.2}s`,
-                  color: i % 2 === 0 ? "rgba(32, 191, 85, 0.6)" : "rgba(255, 255, 255, 0.4)",
-                }}
-              >
-                {Math.random() > 0.5 ? "1" : "0"}
-              </span>
-            ))}
+          {leftSideBinary.map((bit, i) => (
+            <span
+              key={i}
+              className="font-poppins text-xs binary-fall text-white"
+              style={{
+                animationDelay: `${i * 0.2}s`,
+                color: i % 2 === 0 ? "rgba(32, 191, 85, 0.6)" : "rgba(255, 255, 255, 0.4)",
+              }}
+            >
+              {bit}
+            </span>
+          ))}
         </div>
 
         <div className="absolute right-2 top-0 bottom-0 flex flex-col justify-center gap-1 opacity-40 z-10">
-          {Array(8)
-            .fill(null)
-            .map((_, i) => (
-              <span
-                key={i}
-                className="font-poppins text-xs binary-fall text-white"
-                style={{
-                  animationDelay: `${i * 0.3}s`,
-                  color: i % 2 === 0 ? "rgba(32, 191, 85, 0.6)" : "rgba(255, 255, 255, 0.4)",
-                }}
-              >
-                {Math.random() > 0.5 ? "1" : "0"}
-              </span>
-            ))}
+          {rightSideBinary.map((bit, i) => (
+            <span
+              key={i}
+              className="font-poppins text-xs binary-fall text-white"
+              style={{
+                animationDelay: `${i * 0.3}s`,
+                color: i % 2 === 0 ? "rgba(32, 191, 85, 0.6)" : "rgba(255, 255, 255, 0.4)",
+              }}
+            >
+              {bit}
+            </span>
+          ))}
         </div>
 
         {/* Person Image Container */}
@@ -192,48 +210,44 @@ export default function ProfileCard() {
             </div>
 
             {/* Floating binary particles */}
-            {Array(12)
-              .fill(null)
-              .map((_, i) => (
-                <div
-                  key={i}
-                  className="absolute binary-particle"
+            {floatingParticles.map((particle, i) => (
+              <div
+                key={i}
+                className="absolute binary-particle"
+                style={{
+                  left: `${particle.left}%`,
+                  top: `${particle.top}%`,
+                  animationDelay: `${i * 0.3}s`,
+                }}
+              >
+                <span
+                  className="font-mono text-xs"
                   style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
-                    animationDelay: `${i * 0.3}s`,
+                    color: i % 3 === 0 ? "rgba(32, 191, 85, 0.8)" : "rgba(255, 255, 255, 0.5)",
                   }}
                 >
-                  <span
-                    className="font-mono text-xs"
-                    style={{
-                      color: i % 3 === 0 ? "rgba(32, 191, 85, 0.8)" : "rgba(255, 255, 255, 0.5)",
-                    }}
-                  >
-                    {Math.random() > 0.5 ? "1" : "0"}
-                  </span>
-                </div>
-              ))}
+                  {particle.value}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Binary code footer */}
         <div className="absolute bottom-4 left-0 right-0 px-4 z-10">
           <div className="flex justify-center gap-2 overflow-hidden">
-            {Array(20)
-              .fill(null)
-              .map((_, i) => (
-                <span
-                  key={i}
-                  className="font-mono text-xs binary-scroll"
-                  style={{
-                    animationDelay: `${i * 0.1}s`,
-                    color: i % 4 === 0 ? "rgba(32, 191, 85, 0.7)" : "rgba(255, 255, 255, 0.4)",
-                  }}
-                >
-                  {Math.random() > 0.5 ? "1" : "0"}
-                </span>
-              ))}
+            {footerBinary.map((bit, i) => (
+              <span
+                key={i}
+                className="font-mono text-xs binary-scroll"
+                style={{
+                  animationDelay: `${i * 0.1}s`,
+                  color: i % 4 === 0 ? "rgba(32, 191, 85, 0.7)" : "rgba(255, 255, 255, 0.4)",
+                }}
+              >
+                {bit}
+              </span>
+            ))}
           </div>
         </div>
       </div>

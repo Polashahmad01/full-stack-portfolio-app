@@ -30,37 +30,37 @@ export default function MobileSideDrawer({
         <div className="m-4 flex justify-center items-start h-full">
           <ul className="font-normal flex flex-col gap-2">
             <li className="group" onClick={onClose}>
-              <Link className="flex items-center gap-2 px-4 py-1 border rounded-lg transition-all hover:border-blue-700" href="#intro">
+              <Link className="flex items-center gap-2 px-4 py-1 border rounded-xl transition-all hover:border-blue-700" href="#intro">
                 <FaHome className="w-4 h-4 transition-all group-hover:text-blue-700" />
                 <span className="transition-all group-hover:text-blue-700">Home</span>
               </Link>
             </li>
             <li className="group" onClick={onClose}>
-              <Link className="flex items-center gap-2 px-4 py-1 border rounded-lg transition-all hover:border-blue-700" href="#skills">
+              <Link className="flex items-center gap-2 px-4 py-1 border rounded-xl transition-all hover:border-blue-700" href="#skills">
                 <SiHyperskill className="w-4 h-4 transition-all group-hover:text-blue-700" />
                 <span className="transition-all group-hover:text-blue-700">Skills</span>
               </Link>
             </li>
             <li className="group" onClick={onClose}>
-              <Link className="flex items-center gap-2 px-4 py-1 border rounded-lg transition-all hover:border-blue-700" href="#tools-i-use">
+              <Link className="flex items-center gap-2 px-4 py-1 border rounded-xl transition-all hover:border-blue-700" href="#tools-i-use">
                 <FaTools className="w-4 h-4 transition-all group-hover:text-blue-700" />
                 <span className="transition-all group-hover:text-blue-700">Tools</span>
               </Link>
             </li>
             <li className="group" onClick={onClose}>
-              <Link className="flex items-center gap-2 px-4 py-1 border rounded-lg transition-all hover:border-blue-700" href="#my-recent-project">
+              <Link className="flex items-center gap-2 px-4 py-1 border rounded-xl transition-all hover:border-blue-700" href="#my-recent-project">
                 <FaDiagramProject className="w-4 h-4 transition-all group-hover:text-blue-700" />
                 <span className="transition-all group-hover:text-blue-700">Projects</span>
               </Link>
             </li>
             <li className="group" onClick={onClose}>
-              <Link className="flex items-center gap-2 px-4 py-1 border rounded-lg transition-all hover:border-blue-700" href="#my-experience">
+              <Link className="flex items-center gap-2 px-4 py-1 border rounded-xl transition-all hover:border-blue-700" href="#my-experience">
                 <TbBriefcaseFilled className="w-4 h-4 transition-all group-hover:text-blue-700" />
                 <span className="transition-all group-hover:text-blue-700">Career</span>
               </Link>
             </li>
             <li className="group" onClick={onClose}>
-              <Link className="flex items-center gap-2 px-4 py-1 border rounded-lg transition-all hover:border-blue-700" href="#contact-me">
+              <Link className="flex items-center gap-2 px-4 py-1 border rounded-xl transition-all hover:border-blue-700" href="#contact-me">
                 <FaComments className="w-4 h-4 transition-all group-hover:text-blue-700" />
                 <span className="transition-all group-hover:text-blue-700">Contact</span>
               </Link>
