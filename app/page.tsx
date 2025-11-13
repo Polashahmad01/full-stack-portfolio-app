@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import WhoAmI from "@/components/WhoAmI";
 import Skills from "@/components/Skills";
 import ToolsIUse from "@/components/ToolsIUse";
@@ -9,13 +10,14 @@ import AppFooter from "@/components/AppFooter";
 export default function Home() {
   return (
     <main className="bg-black text-white">
+      <Navigation />
       <WhoAmI />
-      <Skills />
+      {/* <Skills />
       <ToolsIUse />
       <MyResentProject />
       <MyExperience />
       <Contact />
-      <AppFooter />
+      <AppFooter /> */}
     </main>
   );
 }
