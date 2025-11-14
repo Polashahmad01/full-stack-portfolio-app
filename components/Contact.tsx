@@ -5,8 +5,8 @@ import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
-    <section id="contact-me" className="mx-4 my-8 lg:max-w-6xl lg:mx-auto">
-      <h2 className="font-righteous text-center text-3xl leading-9 md:text-4xl md:leading-[42px] lg:text-5xl lg:leading-[54px] xl:text-[52px] xl:leading-[58px] mb-6 md:mb-8 lg:mb-10">
+    <section id="contact-me" className="mx-4 mb-16 lg:max-w-6xl lg:mx-auto">
+      <h2 className="font-righteous text-center text-3xl leading-9 md:text-4xl md:leading-[42px] mb-12">
         Contact Me
       </h2>
       <div className="flex flex-col gap-12 md:flex-row md:items-center md:gap-16 lg:mx-12 xl:mx-0">

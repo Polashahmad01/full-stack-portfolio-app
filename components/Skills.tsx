@@ -6,7 +6,7 @@ import SkillCard from "@/components/SkillCard";
 export default function Skills() {
   return (
     <section id="skills" className="mx-4 lg:max-w-6xl lg:mx-auto">
-      <h2 className="font-righteous text-center text-3xl leading-9 md:text-4xl md:leading-[42px] lg:text-5xl lg:leading-[54px] xl:text-[52px] xl:leading-[58px] mb-6 md:mb-8 lg:mb-10">
+      <h2 className="font-righteous text-center text-3xl leading-9 md:text-4xl md:leading-[42px] mt-8 md:mt-0 mb-12">
         Skills
       </h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:mx-12 xl:mx-0">
@@ -14,7 +14,7 @@ export default function Skills() {
           <SkillCard key={skill.id} {...skill} />
         ))}
       </div>
-      <div className="flex justify-center items-center gap-4 mt-8 pb-6 md:pb-8 lg:pb-10">
+      <div className="flex justify-center items-center gap-4 mt-8 mb-16">
         <Link href="https://wa.me/+8801795186140" target="_blank" className="flex items-center gap-4 rounded-full py-2 px-3 text-[#c6ffec] chat__on__whatsapp">
           <span className="text-sm">
             Chat on Whatsapp
