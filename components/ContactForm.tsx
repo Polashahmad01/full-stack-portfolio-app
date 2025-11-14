@@ -3,7 +3,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 export default function ContactForm() {
   return (
     <form className="flex-1 bg-[#171717] rounded-2xl backdrop-blur px-4 py-6 md:px-6 md:py-8">
-      <h3 className="font-righteous text-xl leading-normal tracking-normal mb-4 md:text-2xl md:mb-6">Let's Talk!</h3>
+      <h3 className="font-righteous text-2xl leading-normal tracking-normal mb-4 md:text-3xl md:mb-6">Let's Talk!</h3>
       <div className="grid grid-rows-1 gap-5">
         <div>
           <input

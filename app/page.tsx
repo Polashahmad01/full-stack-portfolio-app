@@ -13,11 +13,11 @@ export default function Home() {
       <Navigation />
       <WhoAmI />
       <Skills />
-      {/* <ToolsIUse />
+      <ToolsIUse />
       <MyResentProject />
       <MyExperience />
       <Contact />
-      <AppFooter /> */}
+      <AppFooter />
     </main>
   );
 }
