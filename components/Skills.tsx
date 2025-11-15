@@ -5,7 +5,8 @@ import SkillCard from "@/components/SkillCard";
 
 export default function Skills() {
   return (
-    <section id="skills" className="mx-4 lg:max-w-6xl lg:mx-auto">
+    <section id="skills" className="relative mx-4 lg:max-w-6xl lg:mx-auto">
+      <div className="hidden md:block skills__glow absolute top-72 right-30" />
       <h2 className="font-righteous text-center text-3xl leading-9 md:text-4xl md:leading-[42px] mt-8 md:mt-0 mb-12">
         Skills
       </h2>

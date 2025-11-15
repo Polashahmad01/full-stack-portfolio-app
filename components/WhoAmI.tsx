@@ -5,7 +5,8 @@ import SocialMedia from "@/components/SocialMedia";
 export default function WhoAmI() {
 
   return (
-    <section id="intro" className="px-4 py-8 flex items-center justify-center min-h-screen lg:max-w-6xl lg:mx-auto">
+    <section id="intro" className="relative px-4 py-8 flex items-center justify-center min-h-screen lg:max-w-6xl lg:mx-auto">
+      <div className="hidden md:block intro__glow md:top-20 md:w-96" />
       <div className="relative flex flex-col items-center gap-8 md:flex-row lg:gap-24">
         <div className="flex-1 flex justify-center mt-12 sm:mt-0">
           <div className="flex items-center gap-6">
