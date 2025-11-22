@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Poppins, Righteous, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
@@ -22,7 +23,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Polash Ahmad | Full Stack Engineer",
-  description: "Polash Ahmad is a skilled full-stack developer specializing in React.js, Next.js, Node.js, Express.js, MongoDB, and PostgreSQL. With expertise in UI/UX design, seamless development proficiency, and a commitment to quick delivery, Polash transforms ideas into high-quality web applications that enhance user experiences.",
+  description:
+    "Polash Ahmad is a skilled full-stack developer specializing in React.js, Next.js, Node.js, Express.js, MongoDB, and PostgreSQL. With expertise in UI/UX design, seamless development proficiency, and a commitment to quick delivery, Polash transforms ideas into high-quality web applications that enhance user experiences.",
 };
 
 export default function RootLayout({
@@ -33,9 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${righteous.variable} ${spaceGrotesk.variable} antialiased`}
-      >
+        className={`${poppins.variable} ${righteous.variable} ${spaceGrotesk.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
